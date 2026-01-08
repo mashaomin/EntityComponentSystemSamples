@@ -65,3 +65,7 @@ Assets/NetCodeGenerated*
 .idea/
 .DS_Store
 RiderScriptEditorPersistedState.asset
+/NetcodeSamples/Assets/Samples/HelloNetcode/2_Intermediate/05_RemotePredictedPlayers/RemotePredictedPlayer/HelloNetcode_RemotePredictedPlayer/RemotePredictedPlayerEntityScene.unity.meta
+/PhysicsSamples/Assets/Tests/TriggerEvents/TriggersFromDeactivatedBodies/DeactivatedBodiesTriggerTest - Dynamic bodies get converted to static inside a trigger/ConvertedStaticSub.unity
+/PhysicsSamples/Assets/Tests/TriggerEvents/TriggersFromDeactivatedBodies/DeactivatedBodiesTriggerTest - Static bodies get converted into dynamic inside a trigger/ConvertedDynamicSub.unity
+/PhysicsSamples/Assets/Tests/TriggerEvents/TriggersFromDeactivatedBodies/DeactivatedBodiesTriggerTest - Static bodies get converted into dynamic inside a trigger/ConvertedDynamicSub.unity.meta
