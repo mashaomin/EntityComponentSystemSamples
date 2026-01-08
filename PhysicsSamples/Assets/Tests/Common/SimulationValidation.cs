@@ -4,6 +4,7 @@ using Unity.Collections.LowLevel.Unsafe;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Mathematics;
+using Unity.Physics.Aspects;
 using Unity.Physics.Extensions;
 using Unity.Physics.Systems;
 using Unity.Transforms;
@@ -314,7 +315,7 @@ namespace Unity.Physics.Tests
                 case JointType.AngularVelocityMotor:
                 {
                     // get expected angular velocity
-                    var motorConstraint = joint[2];
+                    var motorConstraint = joint[0];
                     ValidateConstraintType(motorConstraint, ConstraintType.AngularVelocityMotor);
                     int constrainedAxisIndex = motorConstraint.ConstrainedAxis1D;
 
@@ -330,10 +331,10 @@ namespace Unity.Physics.Tests
 
                     // actual angular velocity in world space (relative to B)
                     var angVelRel = wA - wB;
-                    var check = math.abs(math.lengthsq(expectedAngVelRel - angVelRel));
-                    if (check > AngVelErrorTolSq)
+
+                    if (math.abs(math.lengthsq(expectedAngVelRel - angVelRel)) > AngVelErrorTolSq)
                     {
-                        Errors.Add($"Validation (AngularVelocityMotor): angular joint velocity {angVelRel} ({check}) exceeds expected angular velocity {expectedAngVelRel} by more than provided error tolerance of {AngVelErrorTol} rad/s.");
+                        Errors.Add($"Validation (AngularVelocityMotor): angular joint velocity {angVelRel} exceeds expected angular velocity {expectedAngVelRel} by more than provided error tolerance of {AngVelErrorTol} rad/s.");
                     }
 
                     break;
@@ -416,7 +417,8 @@ namespace Unity.Physics.Tests
     [BurstCompile]
     public partial struct ValidateRigidBodyAtRestJob : IJobEntity
     {
-        [NativeDisableUnsafePtrRestriction] public SimulationValidationSystem.ErrorCounter Errors;
+        [NativeDisableUnsafePtrRestriction]
+        public SimulationValidationSystem.ErrorCounter Errors;
 
         [ReadOnly] public float MaxLinVel;
         [ReadOnly] public float MaxAngVel;
@@ -424,16 +426,15 @@ namespace Unity.Physics.Tests
         [ReadOnly] public float MaxAngVelSq;
 
         [GenerateTestsForBurstCompatibility]
-        void Execute(Entity entity, ref LocalTransform transform, ref PhysicsVelocity pv, ref PhysicsMass pm)
+        void Execute(RigidBodyAspect rigidBody)
         {
-            var vSq = math.lengthsq(pv.Linear);
-            var wSq = math.lengthsq(pv.Angular);
+            var vSq = math.lengthsq(rigidBody.LinearVelocity);
+            var wSq = math.lengthsq(rigidBody.AngularVelocityLocalSpace);
             bool linVelAtRest = vSq <= MaxLinVelSq;
             bool angVelAtRest = wSq <= MaxAngVelSq;
             if (!linVelAtRest || !angVelAtRest)
             {
-                Errors.Add(
-                    $"Validation (Rigid Body, Entity: {entity.ToFixedString()}): (linear, angular) velocity is ({math.sqrt(vSq)}, {math.sqrt(wSq)}), which exceeds the (linear, angular) velocity error tolerance of ({MaxLinVel}, {MaxAngVel}).");
+                Errors.Add($"Validation (Rigid Body, Entity: {rigidBody.Entity.ToFixedString()}): (linear, angular) velocity is ({math.sqrt(vSq)}, {math.sqrt(wSq)}), which exceeds the (linear, angular) velocity error tolerance of ({MaxLinVel}, {MaxAngVel}).");
             }
         }
     }

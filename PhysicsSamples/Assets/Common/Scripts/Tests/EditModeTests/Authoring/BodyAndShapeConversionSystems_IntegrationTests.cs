@@ -121,7 +121,7 @@ namespace Unity.Physics.Tests.Authoring
             TestConvertedData<PhysicsVelocity>(v => Assert.That(v, Is.EqualTo(default(PhysicsVelocity))));
         }
 
-        [Test, Timeout(300000)]
+        [Test]
         public void ConversionSystems_WhenGOHasBody_AuthoringComponentDisabled_AuthoringDataNotConverted()
         {
             CreateHierarchy(Array.Empty<Type>(), Array.Empty<Type>(), new[] { typeof(PhysicsBodyAuthoring) });

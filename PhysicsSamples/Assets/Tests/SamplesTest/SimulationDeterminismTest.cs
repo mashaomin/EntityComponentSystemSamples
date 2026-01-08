@@ -1,5 +1,3 @@
-//#define DEBUG_TEST_IN_PLAYER_BUILD
-
 #if UNITY_ANDROID && !UNITY_64
 #define UNITY_ANDROID_ARM7V
 #endif
@@ -40,17 +38,17 @@ namespace Unity.Physics.Tests
 
             // Following demos are removed from SimulationDeterminism because they take
             // too long to complete, and bring no special value
-            "Planet Gravity", "LargeMesh", "Force Field", "ComplexStacking",
+            "PlanetGravity", "LargeMesh", "Force Field", "ComplexStacking",
 
             // Removed as long as Havok plugins are not build with -strict floating point mode
-            "Raycast Car", "Joints - Parade",
+            "RaycastCar", "Joints - Parade",
 
             // These demos do some verifications that would currently fail with UP
             "AllMotors.unity",
 
 #if UNITY_ANDROID_ARM7V
             // disabled due to sigbuss crashes, something is defo corrupting memory in the allocators
-            "Character Controller",
+            "CharacterController",
             "Animation",
             "ClientServer",
             "DeactivatedBodiesTriggerTest",
@@ -110,10 +108,6 @@ namespace Unity.Physics.Tests
             return scenes;
         }
 
-#if DEBUG_TEST_IN_PLAYER_BUILD
-        static bool kContinue = false;
-#endif
-
 #if !UNITY_EDITOR || UNITY_PHYSICS_INCLUDE_END2END_TESTS
         [UnityTest]
         [Timeout(240000)]
@@ -141,16 +135,6 @@ namespace Unity.Physics.Tests
 
             // Load the scene and wait 2 frames
             SceneManager.LoadScene(scenePath);
-
-#if DEBUG_TEST_IN_PLAYER_BUILD
-            // For testing in player builds, build with "Development Build" and "Script Debugging" enabled.
-            // Attach with your IDE and put a breakpoint on the line below. Then, set the kContinue variable to true
-            // to continue the test and begin debugging.
-            while (!kContinue)
-            {
-                yield return null;
-            }
-#endif
 
             yield return null;
             yield return null;
@@ -192,7 +176,6 @@ namespace Unity.Physics.Tests
             var stepInput = new SimulationStepInput()
             {
                 Gravity = stepComponent.Gravity,
-                NumSubsteps = stepComponent.SubstepCount,
                 NumSolverIterations = stepComponent.SolverIterationCount,
                 SolverStabilizationHeuristicSettings = stepComponent.SolverStabilizationHeuristicSettings,
                 SynchronizeCollisionWorld = true,

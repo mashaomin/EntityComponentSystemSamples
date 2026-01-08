@@ -38,6 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -833,7 +834,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 496342240
   m_ShapeType: 2
   m_PrimitiveCenter:
     x: 0
@@ -872,10 +872,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -968,7 +964,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &119871127
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1935,7 +1931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 290884010
   m_ShapeType: 0
   m_PrimitiveCenter:
     x: 0
@@ -1974,10 +1969,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -2070,7 +2061,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &518514858
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2386,7 +2377,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 791073619
   m_ShapeType: 1
   m_PrimitiveCenter:
     x: 0
@@ -2425,10 +2415,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -2521,7 +2507,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &601527058
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2704,7 +2690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 2081948017
   m_ShapeType: 2
   m_PrimitiveCenter:
     x: 0
@@ -2743,10 +2728,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -2839,7 +2820,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &714357458
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3003,7 +2984,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 1293570383
   m_ShapeType: 2
   m_PrimitiveCenter:
     x: 0
@@ -3042,10 +3022,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -3138,7 +3114,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &767242654
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3322,7 +3298,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 1755615880
   m_ShapeType: 0
   m_PrimitiveCenter:
     x: 0
@@ -3361,10 +3336,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -3457,7 +3428,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &834140901
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3719,7 +3690,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 1895915651
   m_ShapeType: 2
   m_PrimitiveCenter:
     x: 0
@@ -3758,10 +3728,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -3854,7 +3820,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &854733299
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4003,7 +3969,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 1294863550
   m_ShapeType: 2
   m_PrimitiveCenter:
     x: 0
@@ -4042,10 +4007,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -4138,7 +4099,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &1053611784
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4495,7 +4456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 1386325094
   m_ShapeType: 2
   m_PrimitiveCenter:
     x: 0
@@ -4534,10 +4494,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -4630,7 +4586,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &1103463960
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4764,7 +4720,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 517813277
   m_ShapeType: 0
   m_PrimitiveCenter:
     x: 0
@@ -4803,10 +4758,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -4899,7 +4850,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &1156446533
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5349,7 +5300,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 1688355382
   m_ShapeType: 0
   m_PrimitiveCenter:
     x: 0
@@ -5388,10 +5338,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -5484,7 +5430,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &1442324509
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5633,7 +5579,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 1507123705
   m_ShapeType: 0
   m_PrimitiveCenter:
     x: 0
@@ -5672,10 +5617,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -5768,7 +5709,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &1455967327
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5917,7 +5858,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 101311532
   m_ShapeType: 0
   m_PrimitiveCenter:
     x: 0
@@ -5956,10 +5896,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -6052,7 +5988,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &1475210551
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6329,16 +6265,10 @@ MonoBehaviour:
     x: -0
     y: -9.81
     z: -0
-  m_SubstepCount: 1
   m_SolverIterationCount: 4
   m_EnableSolverStabilizationHeuristic: 1
   m_MultiThreaded: 1
-  m_CollisionTolerance: 0.01
   m_SynchronizeCollisionWorld: 0
-  m_IncrementalDynamicBroadphase: 0
-  m_IncrementalStaticBroadphase: 0
-  m_MaxDynamicDepenetrationVelocity: 3
-  m_MaxStaticDepenetrationVelocity: Infinity
 --- !u!114 &1578042808
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6369,7 +6299,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IgnoreTriggers: 1
   IgnoreStatic: 1
-  DeleteEntityOnClick: 0
 --- !u!114 &1578042810
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6391,9 +6320,6 @@ MonoBehaviour:
   DrawCollisionEvents: 0
   DrawTriggerEvents: 0
   DrawJoints: 0
-  ColliderDisplayMode: 0
-  ColliderEdgesDisplayMode: 0
-  ColliderAabbDisplayMode: 0
 --- !u!4 &1578042811
 Transform:
   m_ObjectHideFlags: 0
@@ -6974,7 +6900,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 1904430373
   m_ShapeType: 2
   m_PrimitiveCenter:
     x: 0
@@ -7013,10 +6938,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -7109,7 +7030,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &1755556375
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7258,7 +7179,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 122030800
   m_ShapeType: 2
   m_PrimitiveCenter:
     x: 0
@@ -7297,10 +7217,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -7393,7 +7309,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &1763338820
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7675,7 +7591,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 2036588797
   m_ShapeType: 0
   m_PrimitiveCenter:
     x: 0
@@ -7714,10 +7629,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -7810,7 +7721,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &1853035175
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7979,7 +7890,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 805469000
   m_ShapeType: 1
   m_PrimitiveCenter:
     x: 0
@@ -8018,10 +7928,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -8114,7 +8020,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &2019572600
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8278,7 +8184,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 1526975035
   m_ShapeType: 0
   m_PrimitiveCenter:
     x: 0
@@ -8317,10 +8222,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -8413,7 +8314,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &2132747877
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -8562,7 +8463,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b275e5f92732148048d7b77e264ac30e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ForceUniqueID: 1822729208
   m_ShapeType: 0
   m_PrimitiveCenter:
     x: 0
@@ -8601,10 +8501,6 @@ MonoBehaviour:
     m_CollisionResponse:
       m_Override: 0
       m_Value: 0
-    m_DetailedStaticMeshCollision:
-      m_Override: 0
-      m_Value:
-        Value: 0
     m_Friction:
       m_Override: 0
       m_Value:
@@ -8697,7 +8593,7 @@ MonoBehaviour:
         Tag06: 0
         Tag07: 0
     m_SerializedVersion: 1
-  m_SerializedVersion: 2
+  m_SerializedVersion: 1
 --- !u!23 &7435149754736981409
 MeshRenderer:
   m_ObjectHideFlags: 0

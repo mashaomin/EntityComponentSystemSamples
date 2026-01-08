@@ -276,7 +276,6 @@ public partial class ProjectIntoFutureOnCueSystem : SystemBase
         {
             World = Data.LocalWorld,
             TimeStep = timeStep,
-            NumSubsteps = stepComponent.SubstepCount,
             NumSolverIterations = stepComponent.SolverIterationCount,
             SolverStabilizationHeuristicSettings = stepComponent.SolverStabilizationHeuristicSettings,
             Gravity = stepComponent.Gravity,
